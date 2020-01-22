@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>SurveyForm</title>
+</head>
+<body>
+  <div class="container text-center">
+    <h1 class="my-3 mx-2">Survey Form</h1>
+    <form class="my-3 mx-2" action="/survey" method="post" id="survey">
+      Name:<br>
+      <input class="my-3 mx-2" type="text" name="name"><br>
+      Dojo Location:<br>
+      <select class="my-3 mx-2" name = "dojo">
+        <option value = "Orange County, CA">Orange County, CA</option>
+        <option value = "San Jose, CA">San Jose, CA</option>
+        <option value = "Los Angeles, CA">Los Angeles, CA</option>
+      </select><br>
+      Favorite Language:<br>
+      <select class="my-3 mx-2" name = "language">
+        <option value = "Python">Python</option>
+        <option value = "C#">C#</option>
+        <option value = "JavaScript">JavaScript</option>
+      </select><br>
+      Comments (Optional):<br>
+      <textarea class="my-3 mx-2" name="comments" form="survey">Enter comment here...</textarea><br>
+      <input class="btn btn-success my-2 mx-auto" type="submit" value="Submit"><br>
+      <input class="btn btn-danger my-2 mx-auto" type="reset"><br>
+    </form>
+
+   
+  </div>
+</body>
+</html>
